@@ -1,0 +1,31 @@
+body {
+  overflow: hidden;
+}
+
+#logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-family: helvetica;
+}
+
+#main {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #efefef;
+}
+
+#plasm {
+  width: 75%;
+  min-width: 100px;
+  max-width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#plasm-inspector {
+  margin-top: auto;
+  margin-bottom: 0;
+  right: 0px;
+}
