@@ -2,20 +2,49 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>plasm.js</title>
-  <link rel="stylesheet" href="styles/reset.css">
+  <title>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Linear Algebra Representation">
+  <meta name="author" content="Enrico Marino">
+  <meta name="author" content="Federico Spini">
+  <meta name="author" content="Alberto Paoluzzi">
+  <link rel="stylesheet" href="styles/bootstrap.css">
+  <link rel="stylesheet" href="styles/bootstrap-responsive.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="brand" href="#">LAR</a>
+        <ul class="nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-  <header>
-    <h1 id="logo">PLaSM.js</h1>
-  </header>
+  <div id="plasm" class="container">
+    <div id="div_plasm"></div>
+    <div id="div_framerate"></div>
+  </div>
 
-  <section id="main">
-    <div id="plasm"></div>
-    <div id="plasm-inspector"></div>
-  </section>
+  <div class="container">
+    <div class="control-group">
+      <input id="input_file" type="file">
+    </div>
+    <div class="control-group">
+      <textarea id="textarea_code"></textarea>
+    </div>
+    <div class="control-group">
+      <button id="button_next" class="btn">next</button>
+      <button id="button_eval" class="btn">eval</button>
+    </div>
+    
+  </div>
 
   <script src="support/jquery.js"></script>
   <script src="support/numeric.js"></script>
@@ -27,9 +56,21 @@
   <script src="support/simplexn.js"></script>
   <script src="support/f.js"></script>
 
+  <script src="support/underscore.js"></script>
+  <script src="support/stick.js"></script>
+
+  <script src="support/bootstrap.js"></script>
+
+  <script src="support/emitter.js"></script>
+  <script src="support/reader.js"></script>
+  <script src="support/file.js"></script>
+  
   <script src="lib/plasm.js"></script>
   <script src="lib/plasm-fun.js"></script>
-  <script src="lib/plasm-env.js"></script>
+  <script src="lib/lar.js"></script>
+
+  <script src="index.js"></script>
 
 </body>
+
 </html>
