@@ -1,8 +1,3 @@
-lar-demo
-========
-
-Linear Algebraic Representation demo
-=======
 # LAR demo
 
 Linear Algebra Representation demo

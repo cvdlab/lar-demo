@@ -91,7 +91,7 @@ m3 = m2_hole.extrude([1,1,1]).draw()
 step(function () {
 
 m3.hide()
-m3_exploded = m3.explode([2,2,2]).draw()
+m3_exploded = m3.explode([1.6, 1.6, 1.6]).draw()
 
 });
 
@@ -107,7 +107,7 @@ m3_b = m3.boundary(3).draw().color([.6, .5, .4, 0.75])
 step(function () {
 
 m3_b.hide()
-m3_b_exploded = m3_b.explode([2,2,2]).draw()
+m3_b_exploded = m3_b.explode([1.6, 1.6, 1.6]).draw()
 
 })
 
