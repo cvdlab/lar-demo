@@ -72,29 +72,53 @@ ui.input.onchange = function () {
 
   var reader = f.toText(function(err, str){
     eval(str);
+    on_click_next();
+    on_click_eval();
   });
 };
 
 ui.textarea = document.getElementById('textarea_code');
-
 ui.button_next = document.getElementById('button_next');
+ui.button_eval = document.getElementById('button_eval');
+ui.button_about = document.getElementById('link_about');
 
 function on_click_next () {
   var next = go_next();
   if (next === undefined) return;
   var code = get_code(next);
   ui.textarea.value = code;
+  ui.button_next.setAttribute('disabled', 'disabled');
+  ui.button_eval.removeAttribute('disabled');
 };
 
 function on_click_eval () {
   var code = ui.textarea.value;
   eval(code);
+  ui.button_next.removeAttribute('disabled');
+  ui.button_eval.setAttribute('disabled', 'disabled');
 };
 
-ui.button_next.onclick = on_click_next;
+function on_click_about () {
+  var s = [
+    'LAR',
+    'Linear Algebraic Representation framework',
+    '',
+    'Authors',
+    'Professor Alberto Paoluzzi',
+    'Researcher Enrico Marino',
+    'Researcher Federico Spini',
+    '',
+    'Copyright (c) 2012 CVD Lab',
+    'http://dia.uniroma3.it/~cvdlab'
+  ].join('\n');
 
-ui.button_eval = document.getElementById('button_eval');
+  alert(s);
+}
+
+ui.button_next.onclick = on_click_next;
+ui.button_next.setAttribute('disabled', 'disabled');
 
 ui.button_eval.onclick = on_click_eval;
+ui.button_eval.setAttribute('disabled', 'disabled');
 
-
+ui.button_about.onclick = on_click_about;

@@ -18,10 +18,10 @@
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
-        <a class="brand" href="#">LAR</a>
+        <a class="brand" href="index.html">LAR</a>
         <ul class="nav">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Github</a></li>
+          <li><a id="link_about" href="#about">About</a></li>
+          <li><a id="link_github" href="https://github.com/cvdlab/lar" target="_blank">Github</a></li>
         </ul>
       </div>
     </div>
@@ -35,6 +35,11 @@
   <div class="container">
     <div class="control-group">
       <input id="input_file" type="file">
+      <a id="example_01" href="examples/example_01.js" download>example 01</a>
+      <span>-</span>
+      <a id="example_02" href="examples/example_02.js" download>example 02</a>
+      <span>-</span>
+      <a id="example_03" href="examples/example_03.js" download>example 03</a>
     </div>
     <div class="control-group">
       <textarea id="textarea_code"></textarea>
