@@ -1,6 +1,6 @@
 # LAR demo
 
-Linear Algebra Representation demo
+(Linear Algebraic Representation demo)[http://cvdlab.github.com/lar-demo]
 
 ## Installation
 
