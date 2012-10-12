@@ -10,8 +10,8 @@ git clone git@github.com:cvdlab/lar-demo.git
 
 ## documentation
 
-See the talk at [https://github.com/cvdlab/lar-demo/blob/master/doc/talk.pdf](Global 3D Tech Forum, Seoul, Oct 11, 2012)
-or the  [https://github.com/cvdlab/lar-demo/blob/master/doc/draft.pdf](draft paper) 
+See the talk at [Global 3D Tech Forum, Seoul, Oct 11, 2012](https://github.com/cvdlab/lar-demo/blob/master/doc/talk.pdf)
+or the  [draft paper](https://github.com/cvdlab/lar-demo/blob/master/doc/draft.pdf), 
 yet in preparation.
 
 ## License
